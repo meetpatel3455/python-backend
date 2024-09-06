@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
  
-    int b_code;
+    float b_code;
     char bname[20];
-    int innings, not_out, runs,batavg;
+    float innings, not_out, runs,batavg;
 class base1
 {
    
