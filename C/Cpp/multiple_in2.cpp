@@ -13,6 +13,8 @@ class base1
         {
             cout<<"b_code:\n";
             cin>>b_code;
+            cout<<"bname:\n";
+            cin>>bname;
             cout<<" innings \n:";
             cin>>innings;
             cout<<"not_out \n:";
