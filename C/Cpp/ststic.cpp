@@ -8,7 +8,7 @@ class base{
         number++;
         i++;
     }
-    void display(){
+    static void display(){
         cout<<"ans is "<<number<<endl;
     }
     static void Display(){
