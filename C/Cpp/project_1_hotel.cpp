@@ -16,27 +16,29 @@ public:
         cout << endl << "================= Hotel Menu =================" << endl << endl;
 
         cout << "    ==>> List Of Items <<==" << endl << endl;
-        i[0] = "panir tika  ";
-        i[1] = "pav bhaji   ";
-        i[2] = "manchuriyn  ";
-        i[3] = "vada pav    ";
-        i[4] = "papad       ";
-        i[5] = "dabeli      ";
-        i[6] = "samosa      ";
-        i[7] = "masala dhosa";
-        i[8] = "roti        ";
+        i[0] = "panir tika   ";
+        i[1] = "pav bhaji    ";
+        i[2] = "manchuriyn   ";
+        i[3] = "vada pav     ";
+        i[4] = "papad        ";
+        i[5] = "dabeli       ";
+        i[6] = "samosa       ";
+        i[7] = "masala dhosa ";
+        i[8] = "roti         ";
+        
 
 
 
-        p[0] = 350;
-        p[1] = 200;
-        p[2] = 120;
-        p[3] = 160;
-        p[4] = 130;
-        p[5] = 160;
-        p[6] = 140;
-        p[7] = 500;
-        p[8] = 20 ;
+        p[0] = 350 ;
+        p[1] = 200 ;
+        p[2] = 120 ;
+        p[3] = 160 ;
+        p[4] = 130 ;
+        p[5] = 160 ;
+        p[6] = 140 ;
+        p[7] = 500 ;
+        p[8] = 20  ;
+      
     
 
         cout<<"-------------------------------"<< endl;
@@ -129,7 +131,7 @@ public:
         for (j = 0; j <= z; j++)
         {
             n = o[j];
-            cout<<o[j];
+            // cout<<o[j];
 
             f = x[j];
             n--;
@@ -138,7 +140,7 @@ public:
 
             cout<<"\t"<<j+1<<"\t";
 
-            cout << i[n] << "\t" << p[n] << "\t" << f << "\t\t" << total <<endl;
+            cout << i[n] << "\t" << p[n] << "\t" << f << "\t    " << total <<endl;
 
             t = f*p[n];
 
