@@ -8,7 +8,7 @@ public:
     int p[100], j, d = 0, o[10], z = 0, n, tot = 0,x[10],f=0,t=0,total;
     int choice,qun;
     double gst,n_bill;
-    string i[100], c,m;
+    string i[100],name,m_no;
 
 
     store()
@@ -16,29 +16,59 @@ public:
         cout << endl << "================= Hotel Menu =================" << endl << endl;
 
         cout << "    ==>> List Of Items <<==" << endl << endl;
-        i[0] = "panir tika   ";
-        i[1] = "pav bhaji    ";
-        i[2] = "manchuriyn   ";
-        i[3] = "vada pav     ";
-        i[4] = "papad        ";
-        i[5] = "dabeli       ";
-        i[6] = "samosa       ";
-        i[7] = "masala dhosa ";
-        i[8] = "roti         ";
-        
+          i[0] = "Manchurian     ";
+          i[1] = "Veg-65         ";
+          i[2] = "Garlic-ball    ";
+          i[3] = "Chaines-Bhel   ";
+          i[4] = "Panir-Tika     ";
+          i[5] = "Dosa           ";
+          i[6] = "Maisur         ";
+          i[7] = "Gotalo         ";
+          i[8] = "Mendu-Vada     ";
+          i[9] =  "Idli          ";
+          i[10]=  "7-chesee      ";
+          i[11] = "Mix-Veg       ";
+          i[12] = "Margrita      ";
+          i[13] = "Paneer Tanduri";
+          i[14] = "Onion Pizza   ";
+          i[15] = "Kaju Carry    ";
+          i[16] = "Paneer Masala ";
+          i[17] = "Paneer Tanduri";
+          i[18] = "Veg Paneer    ";
+          i[19] = "Aloo Gobhi    ";
+          i[20] = "Mazza         ";
+          i[21] = "Cock          ";
+          i[22] = "Sprit         ";
+          i[23] = "Butter-Milk   ";
+          i[24] = "Thumsup       ";
+          i[25] = "Sosyo         ";
 
-
-
-        p[0] = 350 ;
-        p[1] = 200 ;
-        p[2] = 120 ;
-        p[3] = 160 ;
-        p[4] = 130 ;
-        p[5] = 160 ;
-        p[6] = 140 ;
-        p[7] = 500 ;
-        p[8] = 20  ;
-      
+          p[0] = 150; 
+          p[1] = 120; 
+          p[2] = 150; 
+          p[3] = 160; 
+          p[4] = 140; 
+          p[5] = 50; 
+          p[6] = 150; 
+          p[7] = 250; 
+          p[8] = 100; 
+          p[9] = 100; 
+          p[10] = 200; 
+          p[11] = 250; 
+          p[12] = 240; 
+          p[13] = 250; 
+          p[14] = 230; 
+          p[15] = 180; 
+          p[16] = 200; 
+          p[17] = 200; 
+          p[18] = 220; 
+          p[19] = 200; 
+          p[20] = 25; 
+          p[21] = 25; 
+          p[22] = 25; 
+          p[23] = 25; 
+          p[24] = 25; 
+          p[25] = 25; 
     
 
         cout<<"-------------------------------"<< endl;
@@ -46,7 +76,7 @@ public:
         cout<< "No.     "<<"   Item        "<<" Price"<< endl;
         cout<<"-------------------------------"<< endl;
 
-        for (j = 0; j <=8; j++)
+        for (j = 0; j <=25; j++)
         {
             cout << j + 1 << "       ";
             cout << i[j] << "     ";
@@ -59,15 +89,15 @@ public:
     {
         cout << "\n\n================ Customer Details ================" << endl << endl;
         cout << "Enter Customer Name          :" ;
-        cin >> c;
+        cin >> name;
 
         again :
 
         cout << "Enter Customer Mobile Number(10 digit only) :" ;
-        cin>>m;
+        cin>>m_no;
 
         d=0;
-        d=m.size();
+        d=m_no.size();
         
         if (d == 10)
         {
@@ -116,22 +146,22 @@ public:
         cout<<"\n\n";
         cout<<"\t==================================================="<<endl << endl;
 
-        cout << "\t" << "\t   BILL ( Hotel Menu )"<<endl << endl;
+        cout << "\t" << "\t      BILL ( Hotel Menu )"<<endl << endl;
         cout<<"\t==================================================="<<endl;
 
-        cout <<endl<< "\tCustomer Name          : " << c ;
-        cout <<endl<< "\tCustomer Mobile Number : " << m << endl << endl;
+        cout <<endl<< "\tCustomer Name          : " << name ;
+        cout <<endl<< "\tCustomer Mobile Number : " << m_no << endl << endl;
 
         cout<<"\t---------------------------------------------------"<<endl;
         
-        cout<<"\t"<<"No.\t"<<"Items"<<"\t"<<"price"<<"\t"<<"Quantity"<<"\t"<<"  Total"<<endl;
+        cout<<"\t"<<"No.\t"<<"Items"<<"\t"<<"       price"<<"   "<<"Quantity"<<"    "<<"Total"<<endl;
 
         cout<<"\t---------------------------------------------------"<<endl;
         
         for (j = 0; j <= z; j++)
         {
             n = o[j];
-            // cout<<o[j];
+    
 
             f = x[j];
             n--;
