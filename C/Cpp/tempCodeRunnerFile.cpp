@@ -1,1 +1,5 @@
- // cout<<o[j];
+
+    // while(getline(is,line))
+    // {
+    //     cout<<line <<endl;
+    // }
