@@ -177,6 +177,8 @@ public:
             tot = tot + t;
         }
         cout<<"\t---------------------------------------------------"<<endl;
+        // cout<<           __DATE__<<endl;
+        // cout<<           __TIME__<<endl;
         
 
         gst= tot * 0.18;

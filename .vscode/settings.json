@@ -32,5 +32,8 @@
         "Thumsup",
         "tika",
         "vada"
-    ]
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
